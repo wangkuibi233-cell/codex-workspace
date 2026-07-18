@@ -1,9 +1,38 @@
-__pycache__/
-*.pyc
-*.pyo
-node_modules/
-.env
-.DS_Store
-Thumbs.db
-*.tmp
-*.log
+ # Python
+ __pycache__/
+ *.pyc
+ *.pyo
+ *.egg-info/
+ dist/
+ build/
+ *.egg
+
+ # Node.js
+ node_modules/
+ npm-debug.log*
+
+ # Environment & secrets
+ .env
+ .env.*
+ !.env.example
+
+ # OS files
+ .DS_Store
+ Thumbs.db
+ Desktop.ini
+
+ # Temp & logs
+ *.tmp
+ *.log
+ *.swp
+ *.swo
+ *~
+
+ # IDE
+ .vscode/
+ .idea/
+ *.sublime-*
+
+ # Git (backup of .git dir from earlier setup)
+ repo.git/
+work/gh/
